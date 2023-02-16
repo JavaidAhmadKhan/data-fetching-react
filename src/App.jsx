@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import { Spinners } from "./Spinners";
+import Spinner from "./Spinner";
+
 
 function App({ id }) {
   const [error, setError] = useState(null);
@@ -33,7 +34,7 @@ function App({ id }) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
     return <div>
-      <Spinners />
+      <Spinner />
     </div>;
   } else {
     return (
