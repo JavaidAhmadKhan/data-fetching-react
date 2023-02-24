@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 
 import BannerSlider from "./components/BannerSlider";
 import DataApi from "./components/DataApi";
+import ScrollButton from "./components/ScrollButton";
 
 
 
@@ -35,6 +36,7 @@ function App() {
           </h2>
         </div>
       </div>
+      <ScrollButton/>
       <Footer />
     </>
   )

@@ -24,7 +24,7 @@ const responsive = {
 
 const BannerSlider = () => {
     return (
-        <div>
+        <div className='overflow-x-hidden'>
             <Carousel
                 className="mt-2 mb-2 mx-4 "
                 showDots={true}
@@ -32,16 +32,15 @@ const BannerSlider = () => {
                 responsive={responsive}
                 sliderClass='gap-2'
             >
+                    <img  className="h-auto w-full object-cover" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/325/325466/man-walking-dog.jpg" alt="" />
 
-                <img className="h-auto w-full object-cover" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/325/325466/man-walking-dog.jpg" alt="" />
+                    <img className="h-auto w-full object-cover" src="https://img.freepik.com/free-vector/gradient-mountain-landscape_52683-77407.jpg" alt="" />
 
-                <img className="h-auto w-full object-cover" src="https://img.freepik.com/free-vector/gradient-mountain-landscape_52683-77407.jpg" alt="" />
+                    <img className="h-auto w-full object-cover" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/325/325466/man-walking-dog.jpg" alt="" />
 
-                <img className="h-auto w-full object-cover" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/325/325466/man-walking-dog.jpg" alt="" />
-
-                <img className="h-auto w-full object-cover" src="https://img.freepik.com/free-vector/gradient-mountain-landscape_52683-77407.jpg" alt="" />
-                <img className="h-auto w-full object-cover" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/325/325466/man-walking-dog.jpg" alt="" />
-
+                    <img className="h-auto w-full object-cover" src="https://img.freepik.com/free-vector/gradient-mountain-landscape_52683-77407.jpg" alt="" />
+                    <img className="h-auto w-full object-cover" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/325/325466/man-walking-dog.jpg" alt="" />
+                
             </Carousel>
         </div>
     )
